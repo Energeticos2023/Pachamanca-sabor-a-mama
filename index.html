@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#8f1d1d" />
+  <meta name="description" content="Pachamanca de tres carnes con delivery en Huaraz e Independencia. Separa tu pedido para el 28 de julio con el 50 %." />
+  <meta property="og:title" content="Pachamanca Sabor a Mamá" />
+  <meta property="og:description" content="Sabe a familia. Sabe a fiesta. Sabe a mamá. Reserva tu pachamanca de tres carnes a domicilio." />
+  <meta property="og:image" content="assets/social-preview.jpg" />
+  <meta property="og:type" content="website" />
+  <title>Pachamanca Sabor a Mamá</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preload" href="assets/hero-pachamanca.webp" as="image" fetchpriority="high" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <img src="assets/logo.svg" alt="" width="42" height="42" />
+      <span><strong>Sabor a Mamá</strong><small>Pachamanca a domicilio</small></span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav id="menu" class="nav" aria-label="Navegación principal">
+      <a href="#precios">Precios</a>
+      <a href="#conoce">Conoce el plato</a>
+      <a href="#reserva" class="nav-cta">Reservar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">🇵🇪 Fiestas Patrias · 28 de julio de 2026</p>
+        <h1 id="hero-title">Pachamanca<br /><span>Sabor a Mamá</span></h1>
+        <p class="hero-slogan">Sabe a familia. Sabe a fiesta. Sabe a mamá.</p>
+        <p class="hero-copy">Este 28 no busques mesa. Te llevamos una abundante pachamanca de tres carnes, calentita y lista para compartir.</p>
+        <div class="hero-actions">
+          <a class="button button-primary js-whatsapp" href="#reserva">Separar ahora</a>
+          <a class="button button-glass" href="#precios">Ver precios</a>
+        </div>
+        <div class="hero-badges" aria-label="Beneficios">
+          <span>🛵 Delivery</span>
+          <span>🥩 3 carnes</span>
+          <span>💳 Reserva con 50 %</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#precios" aria-label="Bajar a precios">⌄</a>
+    </section>
+
+    <section class="section intro-strip" aria-label="Presentación">
+      <div>
+        <p class="kicker">Una celebración sin colas</p>
+        <h2>La tradición llega hasta tu mesa</h2>
+      </div>
+      <p>Carne bien macerada, productos seleccionados y ese sabor caserito que reúne a toda la familia.</p>
+    </section>
+
+    <section class="section" id="precios" aria-labelledby="precios-title">
+      <div class="section-heading">
+        <p class="kicker">Elige tu presentación</p>
+        <h2 id="precios-title">Precios para compartir</h2>
+        <p>Delivery incluido dentro de las zonas urbanas seleccionadas de Huaraz e Independencia.</p>
+      </div>
+      <div class="price-grid" id="price-grid"></div>
+      <p class="price-note">Los horarios de entrega se coordinan según disponibilidad. La reserva queda confirmada después de enviar el comprobante del 50 %.</p>
+    </section>
+
+    <section class="section food-story" id="conoce" aria-labelledby="conoce-title">
+      <div class="food-story-copy">
+        <p class="kicker">Conoce tu pachamanca</p>
+        <h2 id="conoce-title">Tres carnes, un solo sabor inolvidable</h2>
+        <p>Nuestra propuesta combina cerdo, pollo y cordero con productos andinos. Cada componente aporta textura, aroma y carácter al plato.</p>
+        <button class="text-button" type="button" data-open-modal="historia">¿Cómo logramos ese sabor? →</button>
+      </div>
+      <div class="food-story-image">
+        <img src="assets/familia-delivery.webp" alt="Familia recibiendo una pachamanca a domicilio durante Fiestas Patrias" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="section ingredients" aria-label="Componentes de la pachamanca">
+      <article class="ingredient-card meat-card">
+        <span class="ingredient-icon">🐖</span>
+        <h3>Cerdo jugoso</h3>
+        <p>Corte seleccionado, macerado lentamente con hierbas aromáticas para lograr una carne tierna y sabrosa.</p>
+      </article>
+      <article class="ingredient-card meat-card">
+        <span class="ingredient-icon">🐓</span>
+        <h3>Pollo tierno</h3>
+        <p>Presas bien sazonadas que conservan sus jugos y absorben el aroma del huacatay, el chincho y la cocción.</p>
+      </article>
+      <article class="ingredient-card meat-card">
+        <span class="ingredient-icon">🐑</span>
+        <h3>Cordero con carácter</h3>
+        <p>Cortes seleccionados, de sabor profundo y textura suave, preparados para complementar las otras dos carnes.</p>
+      </article>
+      <article class="ingredient-card">
+        <span class="ingredient-icon">🥔</span>
+        <h3>Papas andinas</h3>
+        <p>Cocidas hasta quedar suaves por dentro, con la piel impregnada del aroma de las hierbas y las carnes.</p>
+      </article>
+      <article class="ingredient-card">
+        <span class="ingredient-icon">🍠</span>
+        <h3>Camote dulce</h3>
+        <p>Su dulzor natural equilibra la intensidad de las carnes y aporta una textura cremosa al plato.</p>
+      </article>
+      <article class="ingredient-card">
+        <span class="ingredient-icon">🌽</span>
+        <h3>Choclo ancashino</h3>
+        <p>Granos tiernos y generosos, seleccionados para llevar a la mesa el sabor agrícola de nuestra región.</p>
+      </article>
+      <article class="ingredient-card">
+        <span class="ingredient-icon">🫘</span>
+        <h3>Habas verdes</h3>
+        <p>Suaves y frescas, completan la combinación tradicional de carnes, tubérculos y productos de la chacra.</p>
+      </article>
+      <article class="ingredient-card">
+        <span class="ingredient-icon">🫔</span>
+        <h3>Humita</h3>
+        <p>La nota de maíz tierno que completa una porción abundante, casera y llena de tradición.</p>
+      </article>
+    </section>
+
+    <section class="section promise">
+      <img src="assets/afiche-sabor-mama.webp" alt="Afiche de Pachamanca Sabor a Mamá" loading="lazy" />
+      <div>
+        <p class="kicker">Nuestra promesa</p>
+        <h2>Hecha con ese cariño que se siente desde el primer bocado</h2>
+        <ul class="check-list">
+          <li>Porciones abundantes y bien presentadas.</li>
+          <li>Ingredientes seleccionados y maceración con hierbas.</li>
+          <li>Entrega coordinada en Huaraz e Independencia.</li>
+          <li>Reserva sencilla por WhatsApp y pago con Yape o BCP.</li>
+        </ul>
+        <a class="button button-primary js-whatsapp" href="#reserva">Quiero separar mi pedido</a>
+      </div>
+    </section>
+
+    <section class="section reservation" id="reserva" aria-labelledby="reserva-title">
+      <div class="reservation-info">
+        <p class="kicker">Reserva en menos de un minuto</p>
+        <h2 id="reserva-title">Separa tu pedido con el 50 %</h2>
+        <p>Completa los datos. Al final se abrirá WhatsApp con tu pedido listo para enviar.</p>
+        <div class="payment-card">
+          <div><span>Yape</span><strong>932 757 214</strong><button type="button" class="copy-button" data-copy="932757214">Copiar</button></div>
+          <div><span>BCP Soles</span><strong>41507621155034</strong><button type="button" class="copy-button" data-copy="41507621155034">Copiar</button></div>
+          <div><span>CCI</span><strong>00241510762115503487</strong><button type="button" class="copy-button" data-copy="00241510762115503487">Copiar</button></div>
+        </div>
+      </div>
+
+      <form class="order-form" id="order-form">
+        <label>Nombre y apellido
+          <input id="customer-name" name="name" autocomplete="name" required placeholder="Ej. José Zeña" />
+        </label>
+        <label>Presentación
+          <select id="package-select" name="package" required></select>
+        </label>
+        <div class="two-columns">
+          <label>Distrito
+            <select id="district" name="district" required>
+              <option value="">Seleccionar</option>
+              <option>Huaraz</option>
+              <option>Independencia</option>
+              <option>Otro / coordinar</option>
+            </select>
+          </label>
+          <label>Horario preferido
+            <select id="delivery-time" name="time" required>
+              <option value="">Seleccionar</option>
+              <option>11:30 a. m. – 12:30 p. m.</option>
+              <option>12:30 p. m. – 1:30 p. m.</option>
+              <option>1:30 p. m. – 2:30 p. m.</option>
+              <option>Coordinar por WhatsApp</option>
+            </select>
+          </label>
+        </div>
+        <label>Dirección y referencia
+          <textarea id="address" name="address" rows="3" required placeholder="Calle, número y una referencia fácil de ubicar"></textarea>
+        </label>
+        <label>Forma de pago
+          <select id="payment-method" name="payment" required>
+            <option value="">Seleccionar</option>
+            <option>Yape</option>
+            <option>Transferencia BCP</option>
+          </select>
+        </label>
+        <div class="summary-box" id="order-summary" aria-live="polite"></div>
+        <button class="button button-whatsapp" type="submit">Enviar pedido por WhatsApp</button>
+        <p class="form-note">El horario seleccionado es una preferencia y será confirmado por WhatsApp.</p>
+      </form>
+    </section>
+
+    <section class="section faq" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <p class="kicker">Antes de reservar</p>
+        <h2 id="faq-title">Preguntas rápidas</h2>
+      </div>
+      <details><summary>¿Qué incluye cada porción?</summary><p>Las tres carnes —cerdo, pollo y cordero— acompañadas de papas, camote, choclo, habas y humita, según la presentación elegida.</p></details>
+      <details><summary>¿Cómo confirmo mi reserva?</summary><p>Realiza el adelanto del 50 % por Yape o BCP y envía el comprobante al WhatsApp 932 757 214.</p></details>
+      <details><summary>¿El delivery está incluido?</summary><p>Está incluido dentro de las zonas urbanas seleccionadas de Huaraz e Independencia. Para lugares alejados se coordinará previamente.</p></details>
+      <details><summary>¿Cuándo se entrega?</summary><p>Los pedidos de esta campaña se entregarán el martes 28 de julio de 2026, en el horario confirmado por WhatsApp.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/logo.svg" alt="" width="54" height="54" />
+    <div><strong>Pachamanca Sabor a Mamá</strong><span>Huaraz e Independencia · Áncash</span></div>
+    <a href="https://wa.me/51932757214" target="_blank" rel="noopener">WhatsApp 932 757 214</a>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/51932757214?text=Hola%2C%20deseo%20separar%20mi%20pachamanca%20para%20el%2028%20de%20julio." target="_blank" rel="noopener" aria-label="Reservar por WhatsApp">WhatsApp</a>
+
+  <dialog id="story-modal">
+    <button class="modal-close" type="button" aria-label="Cerrar">×</button>
+    <p class="kicker">El sabor de nuestra tierra</p>
+    <h2>Una preparación que empieza mucho antes de servir</h2>
+    <p>Las carnes se sazonan con una mezcla aromática en la que destacan hierbas como el huacatay y el chincho. La maceración permite que el cerdo, el pollo y el cordero absorban el aderezo y desarrollen sabores diferentes, pero complementarios.</p>
+    <p>Las papas, el camote, el choclo, las habas y la humita completan el plato. El resultado es una comida abundante, aromática y pensada para compartir, como en las grandes reuniones familiares de nuestra sierra.</p>
+    <a class="button button-primary" href="#reserva" data-close-modal>Separar mi pedido</a>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

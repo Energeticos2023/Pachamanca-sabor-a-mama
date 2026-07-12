@@ -1,0 +1,14 @@
+{
+  "name": "Pachamanca Sabor a Mamá",
+  "short_name": "Sabor a Mamá",
+  "description": "Reserva pachamanca de tres carnes con delivery en Huaraz e Independencia.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff8ec",
+  "theme_color": "#8f1d1d",
+  "lang": "es-PE",
+  "icons": [
+    {"src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png"}
+  ]
+}
